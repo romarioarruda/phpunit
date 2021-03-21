@@ -14,6 +14,6 @@ class ArquivoTest extends TestCase
     {
         $filepath = "config.php";
 
-        $this->assertTrue(file_exists($filepath));
+        $this->assertFileExists($filepath);
     }
 }

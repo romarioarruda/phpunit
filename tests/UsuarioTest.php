@@ -39,6 +39,6 @@ class UsuarioTest extends TestCase
     */
     public function retornaCargoUsuario()
     {
-        $this->markTestIncomplete('Falta implementar o set e get do cargo em Usuario.');
+        $this->markTestIncomplete('Falta implementar o set e get do cargo em Usuario.php.');
     }
 }
