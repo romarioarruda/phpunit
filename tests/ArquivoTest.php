@@ -6,11 +6,8 @@ use PHPUnit\Framework\TestCase;
 
 class ArquivoTest extends TestCase
 {
-    /**
-    * @test
-    * @verificandoFalhaIncludeConfig
-    */
-    public function verificandoFalhaIncludeConfig()
+
+    public function testVerificandoFalhaIncludeConfig()
     {
         $filepath = "config.php";
 

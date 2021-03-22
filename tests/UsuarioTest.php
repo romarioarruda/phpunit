@@ -6,11 +6,8 @@ use PHPUnit\Framework\TestCase;
 
 class UsuarioTest extends TestCase
 {
-    /**
-    * @test
-    * @retornaNomeCompleto
-    */
-    public function retornaNomeCompleto()
+    
+    public function testRetornaNomeCompleto()
     {
         $this->expectOutputString('Romário Arruda');
 
@@ -21,11 +18,8 @@ class UsuarioTest extends TestCase
         echo $usuario->getNomeCompleto();
     }
 
-    /**
-    * @test
-    * @retornaIdadeUsuario
-    */
-    public function retornaIdadeUsuario()
+
+    public function testeRetornaIdadeUsuario()
     {
         $usuario = new Usuario();
         $usuario->setIdade(26);
@@ -33,11 +27,8 @@ class UsuarioTest extends TestCase
         $this->assertEquals(26, $usuario->getIdade());
     }
 
-    /**
-    * @test
-    * @retornaCargoUsuario
-    */
-    public function retornaCargoUsuario()
+
+    public function testRetornaCargoUsuario()
     {
         $this->markTestIncomplete('Falta implementar o set e get do cargo em Usuario.php.');
     }
